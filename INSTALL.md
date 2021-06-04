@@ -17,17 +17,12 @@ conda activate fairpreprocess
 The shell should look like: `(fairpreprocess) $ `. Now, continue to step 2 and install packages using this shell.
 When you are done with the experiments, you can exit this virtual environment by `conda deactivate`.
 
-3. Install AIF360 package:
-```
-pip install 'aif360[all]'
-```
-
-4. Clone this FairPreprocessing repository. This will clone both data and code to run the benchmark.
+3. Clone this FairPreprocessing repository. This will clone both data and code to run the benchmark.
 ```
 git clone https://github.com/sumonbis/FairPreprocessing.git
 ```
 
-5. Install required packages:
+4. Navigate to the cloned repository: `cd FairPreprocessing/` and install required packages:
 ```
 pip install -r requirements.txt
 ```
@@ -36,7 +31,7 @@ pip install -r requirements.txt
 ## Run Experiments
 
 #### Run benchmark pipelines
-Navigate to the benchmark directory `cd FairPreprocessing/benchmark/`.
+Navigate to the benchmark directory `cd benchmark/`.
 Under each of the 5 tasks (`german`, `adult`, `bank`, `compas`, `titanic`), there are separate Python scripts for each pipeline.
 
 * To run any of the pipelines, run the shell script `./pipeline.sh <task> <pipeline-id>`. For example, to run the pipeline `GC1`, run `./pipeline.sh german GC1`. The performance of the pipelines will be printed in the terminal.
