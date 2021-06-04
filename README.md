@@ -1,5 +1,5 @@
 # Fair Preprocessing
-This repository contains the source code and data used for the [paper](/fair-preprocessing-paper.pdf), to be appeared at ESEC/FSE 2021. For any questions, contact the corresponding author. The replication package is licensed under [MIT License](/LICENSE.md): Copyright (c) 2020 Sumon Biswas
+This repository contains the source code and data used for the [paper](/fair-preprocessing-paper.pdf), to be appeared at ESEC/FSE 2021. For any questions, contact the corresponding author. The replication package is licensed under [MIT License](/LICENSE): Copyright (c) 2020 Sumon Biswas
 
 **Title** Fair Preprocessing: Towards Understanding Compositional Fairness of Data Transformers in Machine Learning Pipeline
 
