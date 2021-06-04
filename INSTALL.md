@@ -5,7 +5,7 @@ The source code is written in Python 3 and tested using Python 3.7. It is recomm
 ## Installation and Environment Setup
 Follow the instructions below to setup environment and run the source code for reproduction.
 
-Follow the steps to create a virtual environment and run the code.
+Follow these steps to create a virtual environment:
 
 1. Install Anaconda [[installation guide](https://docs.anaconda.com/anaconda/install/)].
 
@@ -17,21 +17,21 @@ conda activate fairpreprocess
 The shell should look like: `(fairpreprocess) $ `. Now, continue to step 2 and install packages using this shell.
 When you are done with the experiments, you can exit this virtual environment by `conda deactivate`.
 
-3. Install required packages:
+3. Install AIF360 package:
 ```
-pip install xgboost imblearn aif360 catboost lightgbm
+pip install 'aif360[all]'
 ```
-OR use the following command to install the dependencies:
+
+4. Clone this FairPreprocessing repository. This will clone both data and code to run the benchmark.
+```
+git clone https://github.com/sumonbis/FairPreprocessing.git
+```
+
+5. Install required packages:
 ```
 pip install -r requirements.txt
 ```
 
-
-4. Clone this FairPreprocessing repository.
-```
-git clone https://github.com/sumonbis/FairPreprocessing.git
-```
-It will clone both data and code to run the benchmark.
 
 ## Run Experiments
 
@@ -39,7 +39,7 @@ It will clone both data and code to run the benchmark.
 Navigate to the benchmark directory `cd FairPreprocessing/benchmark/`.
 Under each of the 5 tasks (`german`, `adult`, `bank`, `compas`, `titanic`), there are separate Python scripts for each pipeline.
 
-* To run any of the pipelines, run the shell script `./pipeline.sh <task> <pipeline-id>.py`. For example, to run the pipeline `GC1`, run `./pipeline.sh german GC1.py`. The performance of the pipelines will be printed in the terminal.
+* To run any of the pipelines, run the shell script `./pipeline.sh <task> <pipeline-id>`. For example, to run the pipeline `GC1`, run `./pipeline.sh german GC1`. The performance of the pipelines will be printed in the terminal.
 
 * To run all the pipelines in a task, run `./pipeline.sh <task>`. Depending on the size of the dataset, it might take some time. For testing, `german` can be used since the dataset size is small.
 
@@ -48,9 +48,9 @@ Under each of the 5 tasks (`german`, `adult`, `bank`, `compas`, `titanic`), ther
 #### Run analysis (fair preprocessing stages)
 Navigate to the source code directory `FairPreprocessing/src/fair-preprocessing/`. Then run shell script to run pipelines *n* times.
 
-* To run a single pipeline: `./stages <task> <pipeline-id> <positive-integer>`. We run these experiments multiple times and accumulate results. For quick testing, run `./stages german GC1 1`.
+* To run a single pipeline: `./stages.sh <task> <pipeline-id> <positive-integer>`. We run these experiments multiple times and accumulate results. For quick testing, run `./stages.sh german GC1 1`.
 
-* To run all the pipelines in a task use this command: `./stages <task> <positive-integer>`.
+* To run all the pipelines in a task use this command: `./stages.sh <task> <positive-integer>`.
 
 Running each model will produce result into `.csv` file in this location: `FairPreprocessing/src/fair-preprocessing/<task>/res/`. The results are then accumulated to `rq1-x.csv` in `FairPreprocessing/result/`.
 

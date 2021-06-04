@@ -20,7 +20,7 @@ This repository contains the source code and data used for the [paper](/fair-pre
   >>> + [Fair transformers](src/fair-transformers)
   >> * [Utilities](utils/)
 >  5. [Results](res/) (RQ1, RQ2, RQ3)
->  6. [DOI and Citation](doi-of-replication-package)
+>  6. [DOI and Citation](#doi-of-replication-package)
 
 
 ## Benchmark
@@ -40,7 +40,7 @@ The benchmark contains 37 ML pipelines under 5 different tasks from three prior 
 | [GC10](benchmark/german/GC10.py) | [AC10](benchmark/adult/AC10.py) | - | - | - |
 
 ## DOI of Replication Package
-
+[![DOI](https://zenodo.org/badge/371777846.svg)](https://zenodo.org/badge/latestdoi/371777846)
 
 Cite the paper as:
 

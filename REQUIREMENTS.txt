@@ -1,6 +1,9 @@
-aif360=0.2.2=dev_0
-catboost=0.21=pypi_0
-imblearn=0.0=pypi_0
-lightgbm=2.3.1=pypi_0
-scikit-learn=0.21.3=pypi_0
-xgboost=0.90=pypi_0
+aif360==0.2.2
+catboost==0.21
+imblearn==0.0
+imbalanced-learn==0.6.1
+lightgbm==2.3.1
+xgboost==0.90
+tensorflow>=1.13.1,<2
+fairlearn==0.4.6
+numpy==1.18.1

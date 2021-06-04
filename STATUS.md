@@ -5,6 +5,7 @@ We apply for the three badges *available*, *functional*, and *reusable*. Here ar
 ### Available
 The artifact is publicly shared in the GitHub repository: `https://github.com/sumonbis/FairPreprocessing.git`.
 Furthermore, a DOI is obtained for the latest release:
+[![DOI](https://zenodo.org/badge/371777846.svg)](https://zenodo.org/badge/latestdoi/371777846)
 
 ### Functional
 We provided detailed instructions for installation, environment setup, and run the benchmark. Furthermore we shared the following necessary components of the artifact:
