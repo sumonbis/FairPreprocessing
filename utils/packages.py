@@ -9,10 +9,6 @@ from random import randrange
 
 # AIF360 Library
 from aif360.datasets import *
-# from aif360.algorithms.preprocessing import LFR, Reweighing, DisparateImpactRemover
-# from aif360.algorithms.inprocessing import AdversarialDebiasing, PrejudiceRemover
-# from aif360.algorithms.postprocessing import CalibratedEqOddsPostprocessing, EqOddsPostprocessing, RejectOptionClassification
-#from aif360.algorithms.preprocessing.optim_preproc_helpers.data_preproc_functions import load_preproc_data_adult, load_preproc_data_german, load_preproc_data_compas
 
 # Scikit-learn Library
 from sklearn.linear_model import LogisticRegression

@@ -108,7 +108,7 @@ def get_unprivileged(data):
 
 def compute_CV(data_orig_test, y1_pred, y2_pred):
     unpriv, unpriv_val = get_unprivileged(data_orig_test)
-    print("Unprinv:", unpriv, unpriv_val)
+    # print("Unprinv:", unpriv, unpriv_val)
 
     test_data, _ = data_orig_test.convert_to_dataframe()
     y_test = data_orig_test.labels.ravel()
