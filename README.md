@@ -7,20 +7,20 @@ This repository contains the source code and data used for the [paper](/fair-pre
 
 ## Index
 > 1. [Benchmark](#benchmark)
-2. [Installation and Evaluation](/INSTALL.md)
-3. Datasets
+> 2. [Installation and Evaluation](/INSTALL.md)
+> 3. Datasets
   >> * [German Credit](data/german)
-  * [Adult Census](data/adult)
-  * [Bank Marketing](data/bank)
-  * [Compas](data/compas)
-  * [Titanic](data/titanic)
-4. Source code
+  >> * [Adult Census](data/adult)
+  >> * [Bank Marketing](data/bank)
+  >> * [Compas](data/compas)
+  >> * [Titanic](data/titanic)
+> 4. Source code
   >> * Experiments
-    >>>* [Fair preprocessing](src/fair-preprocessing)
-    * [Fair transformers](src/fair-transformers)
-  * [Utilities](utils/)
-5. [Results](res/) (RQ1, RQ2, RQ3)
-6. [DOI and Citation](doi-of-replication-package)
+  >>> + [Fair preprocessing](src/fair-preprocessing)
+  >>> + [Fair transformers](src/fair-transformers)
+  >> * [Utilities](utils/)
+>  5. [Results](res/) (RQ1, RQ2, RQ3)
+>  6. [DOI and Citation](doi-of-replication-package)
 
 
 ## Benchmark
