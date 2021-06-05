@@ -32,11 +32,11 @@ pip install -r requirements.txt
 
 #### Run benchmark pipelines
 Navigate to the benchmark directory `cd benchmark/`.
-Under each of the 5 tasks (`german`, `adult`, `bank`, `compas`, `titanic`), there are separate Python scripts for each pipeline.
+Under each of the 5 tasks (`german`, `adult`, `bank`, `compas`, `titanic`), there are separate Python scripts for each pipeline. Running the pipelines will output accuracy and F1 score in command line.
 
 * To run any of the pipelines, run the shell script `./pipeline.sh <task> <pipeline-id>`. For example, to run the pipeline `GC1`, run `./pipeline.sh german GC1`. The performance of the pipelines will be printed in the terminal.
 
-* To run all the pipelines in a task, run `./pipeline.sh <task>`. Depending on the size of the dataset, it might take some time. For testing, `german` can be used since the dataset size is small.
+* To run all the pipelines in a task, run `./pipeline.sh <task>`. Depending on the size of the dataset, it might take some time. For testing, `german` can be used as a task since the dataset size is small.
 
 * To run all the pipelines, run `./pipeline.sh all`. However, it might take many hours to finish.  
 
@@ -47,7 +47,8 @@ Navigate to the source code directory `FairPreprocessing/src/fair-preprocessing/
 
 * To run all the pipelines in a task use this command: `./stages.sh <task> <positive-integer>`.
 
-Running each model will produce result into `.csv` file in this location: `FairPreprocessing/src/fair-preprocessing/<task>/res/`. The results are then accumulated to `rq1-x.csv` in `FairPreprocessing/result/`.
+Running each model will produce result into `.csv` file in this location: `FairPreprocessing/src/fair-preprocessing/<task>/res/`.
+The results are then accumulated to `rq1-x.csv` in `FairPreprocessing/result/`.
 
 #### Run analysis (fair transformers)
 Navigate to the source code directory `FairPreprocessing/src/fair-transformers/`. Run the shell script to run each task multiple times: `./trans.sh <task> <positive-number>`.
