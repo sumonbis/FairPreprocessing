@@ -6,7 +6,7 @@ then
   python $2.py
   cd ..
 fi
- 
+
 if [ $# -eq 1 ]
 then
   if [ $1 == 'all' ]

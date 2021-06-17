@@ -1,6 +1,6 @@
 # Installation and Usage
 
-The source code is written in Python 3 and tested using Python 3.7. It is recommended to use a virtual Python environment for this setup. Further, we used shell scripts to automate running benchmark and Python scripts.
+The source code is written in Python 3 and tested using Python 3.7 on Mac OS. It is recommended to use a virtual Python environment for this setup. Furthermore, we used bash shell scripts to automate running benchmark and Python scripts.
 
 ## Installation and Environment Setup
 Follow the instructions below to setup environment and run the source code for reproduction.
