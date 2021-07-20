@@ -5,7 +5,7 @@ This repository contains the source code and data used for the following paper, 
 
 **Authors** Sumon Biswas (sumon@iastate.edu) and Hridesh Rajan (hridesh@iastate.edu)
 
-*PDF* https://arxiv.org/abs/2106.06054
+**PDF** https://arxiv.org/abs/2106.06054
 
 ## Index
 > 1. [Benchmark](#benchmark)
